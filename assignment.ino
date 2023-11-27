@@ -1,3 +1,5 @@
+// arduino code to interface LM35 with Arduino and change blink rates according to the temperature
+
 #include <TimerOne.h>
 
 const int tempPin = A0;  // LM35 temperature sensor connected to analog pin A0
@@ -9,9 +11,8 @@ void setup() {
   Timer1.start();
 }
 
-void loop() {
-  // Your main code goes here
-  // No need for delay or busy-waiting
+void loop() 
+{
 }
 
 void checkTemperature() 
